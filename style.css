@@ -4,7 +4,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     font-family: "Jersey 10", serif;
     flex-direction: column;
 }
