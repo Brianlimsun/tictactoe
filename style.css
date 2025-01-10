@@ -29,6 +29,7 @@ body{
     border-radius: 5px;
     font-size: 110px;
     color: white;
+    cursor:pointer;
 }
 .b2, .b4, .b6, .b8{
     background-color: #BA2B3C;
