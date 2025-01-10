@@ -45,6 +45,7 @@ body{
     padding: 8px 20px;
     border-radius: 20px;
     visibility: hidden;
+    cursor:pointer;
 }
 @media(max-width:430px){
     .container{
