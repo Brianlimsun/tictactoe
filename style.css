@@ -39,6 +39,7 @@ body{
 .reset{
     font-family: "Jersey 10", serif;
     font-size: 40px;
+    font-weight: 100;
     background-color:#F14678;
     color: white;
     padding: 8px 20px;
