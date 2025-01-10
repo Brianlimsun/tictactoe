@@ -10,6 +10,7 @@ let btn9=document.querySelector(".b9");
 let heading=document.querySelector(".title");
 let reset=document.querySelector(".reset");
 let chance= "X";
+let win=0;
 function  changeChance(){
     if(chance=="X"){
         chance="O";
@@ -91,6 +92,7 @@ function checkWin(){
     btn1.innerText==btn3.innerText&&
     btn1.innerText!=''){
         heading.innerText=chance+ " Wins!";
+        win=1;
         disable();
         reset.style.visibility='inherit';   
     }
@@ -98,6 +100,7 @@ function checkWin(){
         btn4.innerText==btn6.innerText&&
         btn4.innerText!=''){
             heading.innerText=chance+ " Wins!";
+            win=1;
             disable();
             reset.style.visibility='inherit';  
         }
@@ -105,6 +108,7 @@ function checkWin(){
         btn7.innerText==btn9.innerText&&
         btn7.innerText!=''){
             heading.innerText=chance+ " Wins!";
+            win=1;
             disable();
             reset.style.visibility='inherit';  
         }
@@ -112,6 +116,7 @@ function checkWin(){
         btn1.innerText==btn7.innerText&&
         btn1.innerText!=''){
             heading.innerText=chance+ " Wins!";
+            win=1;
             disable();
             reset.style.visibility='inherit';
         }
@@ -119,6 +124,7 @@ function checkWin(){
     btn2.innerText==btn8.innerText&&
     btn2.innerText!=''){
         heading.innerText=chance+ " Wins!";
+        win=1;
         disable();
         reset.style.visibility='inherit'; 
     }
@@ -126,6 +132,7 @@ function checkWin(){
         btn3.innerText==btn9.innerText&&
         btn3.innerText!=''){
             heading.innerText=chance+ " Wins!";
+            win=1;
             disable();
             reset.style.visibility='inherit';  
         }
@@ -133,6 +140,7 @@ function checkWin(){
         btn1.innerText==btn9.innerText&&
         btn1.innerText!=''){
             heading.innerText=chance+ " Wins!";
+            win=1;
             disable();
             reset.style.visibility='inherit'; 
         }
@@ -140,6 +148,7 @@ function checkWin(){
         btn3.innerText==btn7.innerText&&
         btn3.innerText!=''){
             heading.innerText=chance+ " Wins!";
+            win=1;
             disable();
             reset.style.visibility='inherit';
         }
@@ -151,7 +160,8 @@ function checkWin(){
         btn6.innerHTML!=''&&
         btn7.innerHTML!=''&&
         btn8.innerHTML!=''&&
-        btn9.innerHTML!=''
+        btn9.innerHTML!=''&&
+        win==0
     ){
         heading.innerText="Game Draw";
         reset.style.visibility='inherit';  
