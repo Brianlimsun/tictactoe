@@ -73,7 +73,7 @@ btn9.onclick=function(){
     changeChance();
 }
 reset.onclick=function(){
-    location.reload();
+    window.location.href='index.html';
 }
 function disable(){
     btn1.onclick=null;
